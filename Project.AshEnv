@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<user creator="ASH WARE, Inc." version="2.72.4.0">
+  <source_code_search />
+  <app_dimensions x="-8" y="-8" w="1936" h="1096" />
+  <splitter name="projectBtmSplitter" distance="513" total="982" orientation="horizontal" />
+  <splitter name="projectRhtSplitter" parent="projectBtmSplitter" order="1" distance="241" total="1920" orientation="vertical" />
+  <splitter name="editSplitter" parent="projectRhtSplitter" order="2" distance="939" total="1675" orientation="vertical" />
+  <splitter name="outputSplitter" parent="projectBtmSplitter" order="2" distance="1296" total="1920" orientation="vertical" />
+  <line_info_mgr />
+  <TabPage type="LogicAnalyzer" ctrl="output1TabControl" sel="true">
+    <ScopeSettings selected_channel="5" selected_cursor="1" auto_scroll="True" first_chan="0" width="137" />
+    <ScopeTimes>
+      <LeftSide word_a="0" word_b="1188018" word_c="1542940672" />
+      <Width word_a="0" word_b="29103" word_c="3566784512" />
+      <LeftCursor word_a="0" word_b="46566" word_c="552894464" />
+      <RightCursor word_a="0" word_b="814886" word_c="1542696594" />
+    </ScopeTimes>
+    <ClocksTimeOptions />
+    <TimeDisplayOptions />
+    <ThreadGroups>
+      <Host index="0" group_a="0" group_b="0" group_c="0" group_d="0" group_e="0" group_f="0" group_g="0" group_h="0" />
+      <eTPU_A index="1" group_a="1" group_b="2" group_c="4" group_d="8" group_e="16" group_f="32" group_g="64" group_h="128" />
+    </ThreadGroups>
+    <ScopeChannels>
+      <ScopeChan index="0" name="_ch1.in" alias="QD_A" target_index="1" height="31" chan_state_mask="255" />
+      <ScopeChan index="1" name="_ch2.in" alias="QD_B" target_index="1" height="31" chan_state_mask="255" />
+      <ScopeChan index="2" name="_ThreadsIdle" alias="_ThreadsIdle" target_index="1" height="31" />
+      <ScopeChan index="3" name="period._data_32" target_index="1" height="90" is_discrete="True" sym_chan_hint="1" sym_base_name="_QD_AW613E_period_" sym_child_path="0,-1" min_value="0" max_value="9.998083E+07" />
+      <ScopeChan index="4" name="mode_current" target_index="1" height="64" is_discrete="True" sym_chan_hint="2" sym_base_name="_QD_AW613E_mode_current_" min_value="0" max_value="26" />
+      <ScopeChan index="5" name="pc" target_index="1" height="72" is_discrete="True" sym_chan_hint="2" sym_base_name="_QD_AW613E_pc_" min_value="-1" max_value="95" />
+      <ScopeChan index="-1" name="_ch3.in" alias="QD_HOME" target_index="1" height="0" chan_state_mask="255" />
+      <ScopeChan index="-1" name="_ch4.in" alias="QD_INDEX" target_index="1" height="0" chan_state_mask="255" />
+    </ScopeChannels>
+  </TabPage>
+  <TabPage type="Breakpoint" is_closed="true" ctrl="projectTabControl" />
+  <TabPage type="TraceBuf" is_closed="true" ctrl="output2TabControl">
+    <Host />
+    <eTPU_A />
+  </TabPage>
+  <TabPage type="Source" ctrl="edit1TabControl" file="main.c" top_line="467" sel="true" start_pos="18129" len="0" sel_text="" />
+  <TabPage type="Source" ctrl="edit1TabControl" file="etpu_gct.c" top_line="0" start_pos="6360" len="0" sel_text="" />
+  <TabPage type="Source" ctrl="edit1TabControl" file="etpu\eqd\etpu_eqd.c" top_line="868" start_pos="42882" len="0" sel_text="" />
+  <TabPage type="Source" ctrl="edit1TabControl" file="etpu\_utils\etpu_util_ext.c" top_line="1402" start_pos="44961" len="0" sel_text="" />
+  <TabPage type="Script" ctrl="edit1TabControl" file="QD.Cpu32Command" top_line="0" start_pos="409" len="0" sel_text="" />
+  <TabPage type="Source" ctrl="edit2TabControl" file="etpu\_etpu_set\cpu\etpu_eqd_auto.h" top_line="12" start_pos="1839" len="24" sel_text="FS_ETPU_QD_PERIOD_OFFSET" />
+  <TabPage type="Source" ctrl="edit2TabControl" file="etpu\eqd\etpu_eqd.h" top_line="0" sel="true" start_pos="222" len="0" sel_text="" />
+  <TabPage type="Source" ctrl="edit2TabControl" file="etpu\_utils\etpu_util_ext.h" top_line="360" start_pos="9901" len="12" sel_text="FS_ETPU_TCR1" />
+  <TabPage type="Source" ctrl="edit2TabControl" file="include\mpc5554_vars.h" top_line="0" start_pos="1107" len="0" sel_text="" />
+  <TabPage type="RegisterWindow" ctrl="edit2TabControl" target_tag="eTpu" win_type="FTWT_CHANNEL" channel="2" target="eTPU_A" top_line="0" />
+  <TabPage type="Output" ctrl="output1TabControl" />
+  <TabPage type="Watch" ctrl="output2TabControl">
+    <Columns />
+    <SymbolList />
+  </TabPage>
+  <TabPage type="LocalVariable" ctrl="output2TabControl" target="1">
+    <Columns />
+  </TabPage>
+  <TabPage type="ChannelFrame" ctrl="output2TabControl" sel="true" target="1" channel="-1">
+    <Columns width_1="321" />
+  </TabPage>
+  <TabPage type="LocalVariable" ctrl="output2TabControl" target="0">
+    <Columns />
+  </TabPage>
+  <TabPage type="Project" ctrl="projectTabControl" file="Project.FullSysIdeProj" sel="true" />
+  <TabPage type="RegisterWindow" ctrl="projectTabControl" target_tag="eTpu" win_type="FTWT_REGISTER" target="eTPU_A" top_line="0" />
+  <selected_project_node name="CC: etpu_gct.c" />
+  <!--Saved last-used directories-->
+  <last_dir type="SourceAsmGtm" dir="etpu\_etpu_set\" />
+  <last_dir type="SourceH" dir="etpu\_etpu_set\" />
+  <search_dialog sub_dirs="true">
+    <find val="FS_ETPU_QD_SLOW_NORMAL_THR_OFFSET" />
+    <find val="FS_ETPU_QD_PERIOD_OFFSET" />
+    <find val="FS_ETPU_TCR1" />
+    <find val="FS_ETPU_QD_ETPU_A_TCR1_FREQ" />
+    <find val="QD_FAST_TO_NORMAL_SWITCH" />
+    <find val="QD_FINAL" />
+    <replace val="FS_ETPU_QD_SLOW_NORMAL_THR_OFFSET" />
+    <replace val="FS_ETPU_QD_PERIOD_OFFSET" />
+    <replace val="FS_ETPU_TCR1" />
+    <replace val="FS_ETPU_QD_ETPU_A_TCR1_FREQ" />
+    <replace val="QD_FAST_TO_NORMAL_SWITCH" />
+    <replace val="QD_FINAL" />
+    <directory val="C:\GIT\EQD-eTPU\" />
+    <directory val="C:\GIT\ASHWARE\Tests\Drivers\EnhancedQD\set3\" />
+    <directory val="C:\ASHWARE\GIT\ASHWARE\Tests\Drivers\EnhancedQD\set3\" />
+    <file_types val="*.ETpuCommand" />
+    <file_types val="*.c,*.h" />
+    <file_types val="*.Vector" />
+  </search_dialog>
+  <workshops enabled="True" active_index="1" />
+  <ide_is_setting />
+  <step_asm_multiple val="10" />
+  <step_angle_teeth_multiple val="3" />
+  <is_goto_abs_angle val="false" />
+  <goto_absolute_angle cycles="1" degrees="2" hundredths="3" />
+  <goto_delta_angle cycles="4" degrees="5" hundredths="6" />
+  <goto_absolute_time ks="0" sec="0" ms="41" us="580" ns="852" />
+  <goto_delta_time ks="0" sec="0" ms="0" us="10" ns="0" />
+  <is_goto_abs_time val="false" />
+  <goto_line_num val="10" />
+  <make_node target="eTPU_A" file="etpu\_etpu_set\obj\ETEC_fs_func_set.eao" time="5249165785667557210">
+    <dependent_file file="etpu\_etpu_set\ETEC_fs_func_set.c" time="5249126000776322205" />
+    <dependent_file file="..\ASHWARE\Builds\Include\ETpu_Std.h" time="5249009325211664682" />
+    <dependent_file file="..\ASHWARE\Builds\Include\ETpu_Hw.h" time="5249089094045914182" />
+    <dependent_file file="..\ASHWARE\Builds\Include\ETpu_Lib.h" time="5249009246858268805" />
+    <dependent_file file="Project.FullSysIdeProj" time="5249126000776302260" />
+  </make_node>
+  <make_node target="eTPU_A" file="etpu\_etpu_set\obj\etec_eqd.eao" time="5249165785670331000">
+    <dependent_file file="etpu\_etpu_set\etec_eqd.c" time="5249126000776382043" />
+    <dependent_file file="..\ASHWARE\Builds\Include\etpu_std.h" time="5249009325211664682" />
+    <dependent_file file="..\ASHWARE\Builds\Include\ETpu_Hw.h" time="5249089094045914182" />
+    <dependent_file file="..\ASHWARE\Builds\Include\ETpu_Lib.h" time="5249009246858268805" />
+    <dependent_file file="Project.FullSysIdeProj" time="5249126000776302260" />
+  </make_node>
+  <make_node target="Host" file="obj\main.o" time="5249165785679476521">
+    <dependent_file file="main.c" time="5249126000777341970" />
+    <dependent_file file="..\ASHWARE\Builds\Include\isrLib.h" time="5249075081292280513" />
+    <dependent_file file="..\ASHWARE\Builds\Include\ScriptLib.h" time="5248851424849590795" />
+    <dependent_file file="etpu\_utils\etpu_util_ext.h" time="5249126000776431911" />
+    <dependent_file file="etpu\_utils\typedefs.h" time="5249126000776474943" />
+    <dependent_file file="include\etpu_struct.h" time="5249126000776544777" />
+    <dependent_file file="include\typedefs.h" time="5249126000777331995" />
+    <dependent_file file="etpu_gct.h" time="5249126000776534801" />
+    <dependent_file file="etpu\eqd\etpu_eqd.h" time="5249126000776484941" />
+    <dependent_file file="etpu\_utils\etpu_util_ext.h" time="5249126000776431911" />
+    <dependent_file file="etpu\_etpu_set\cpu\etpu_eqd_auto.h" time="5249165785676147910" />
+    <dependent_file file="Project.FullSysIdeProj" time="5249126000776302260" />
+  </make_node>
+  <make_node target="Host" file="obj\etpu_gct.o" time="5249165785681500721">
+    <dependent_file file="etpu_gct.c" time="5249126000776494912" />
+    <dependent_file file="etpu\_utils\typedefs.h" time="5249126000776474943" />
+    <dependent_file file="etpu_gct.h" time="5249126000776534801" />
+    <dependent_file file="etpu\_utils\etpu_util_ext.h" time="5249126000776431911" />
+    <dependent_file file="etpu\_utils\typedefs.h" time="5249126000776474943" />
+    <dependent_file file="include\etpu_struct.h" time="5249126000776544777" />
+    <dependent_file file="include\typedefs.h" time="5249126000777331995" />
+    <dependent_file file="etpu\_etpu_set\cpu\etpu_set.h" time="5249126000776372074" />
+    <dependent_file file="etpu\_etpu_set\etpu_set_defines.h" time="5249165785676098490" />
+    <dependent_file file="etpu\_etpu_set\etpu_set_scm.h" time="5249165785676218134" />
+    <dependent_file file="etpu\_etpu_set\etpu_set_idata.h" time="5249165785676038641" />
+    <dependent_file file="include\mpc5554_vars.h" time="5249126000776763522" />
+    <dependent_file file="Project.FullSysIdeProj" time="5249126000776302260" />
+  </make_node>
+  <make_node target="Host" file="obj\etpu_util_ext.o" time="5249165785683601164">
+    <dependent_file file="etpu\_utils\etpu_util_ext.c" time="5249126000776431911" />
+    <dependent_file file="etpu\_utils\etpu_util_ext.h" time="5249126000776431911" />
+    <dependent_file file="etpu\_utils\typedefs.h" time="5249126000776474943" />
+    <dependent_file file="include\etpu_struct.h" time="5249126000776544777" />
+    <dependent_file file="include\typedefs.h" time="5249126000777331995" />
+    <dependent_file file="Project.FullSysIdeProj" time="5249126000776302260" />
+  </make_node>
+  <make_node target="Host" file="obj\etpu_eqd.o" time="5249165785685472698">
+    <dependent_file file="etpu\eqd\etpu_eqd.c" time="5249126000776484941" />
+    <dependent_file file="etpu\_utils\etpu_util_ext.h" time="5249126000776431911" />
+    <dependent_file file="etpu\_utils\typedefs.h" time="5249126000776474943" />
+    <dependent_file file="include\etpu_struct.h" time="5249126000776544777" />
+    <dependent_file file="include\typedefs.h" time="5249126000777331995" />
+    <dependent_file file="etpu\_etpu_set\cpu\etpu_auto_api.h" time="5249126000776362527" />
+    <dependent_file file="etpu\_etpu_set\etpu_set_defines.h" time="5249165785676098490" />
+    <dependent_file file="etpu\_etpu_set\etpu_set_struct.h" time="5249165785676137941" />
+    <dependent_file file="etpu\eqd\etpu_eqd.h" time="5249126000776484941" />
+    <dependent_file file="etpu\_utils\etpu_util_ext.h" time="5249126000776431911" />
+    <dependent_file file="etpu\_etpu_set\cpu\etpu_eqd_auto.h" time="5249165785676147910" />
+    <dependent_file file="Project.FullSysIdeProj" time="5249126000776302260" />
+  </make_node>
+  <make_node target="Host" file="QD.Cpu32Command" time="5249126000776312230">
+    <dependent_file file="QD.Cpu32Command" time="5249126000776312230" />
+  </make_node>
+  <source_file name="etpu\qd\etpu_eqd.h" tool="None" />
+  <!--=======================================================-->
+  <!--======    START TARGET-SPECIFIC SETTINGS        =======-->
+  <target name="Host" />
+  <!--======    END TARGET-SPECIFIC SETTINGS          =======-->
+  <!--=======================================================-->
+  <!--=======================================================-->
+  <!--======    START TARGET-SPECIFIC SETTINGS        =======-->
+  <target name="eTPU_A" />
+  <!--======    END TARGET-SPECIFIC SETTINGS          =======-->
+  <!--=======================================================-->
+</user>

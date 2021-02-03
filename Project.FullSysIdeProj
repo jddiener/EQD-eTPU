@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<user creator="ASH WARE, Inc." version="2.72.4.0">
+  <build_file name="zzz_1Sim32_1ETpuSim.MtDtBuild" in_build_script_dir="true" />
+  <etec_dir val="Development" />
+  <source_code_search />
+  <!--=======================================================-->
+  <!--======    START TARGET-SPECIFIC SETTINGS        =======-->
+  <target name="Host">
+    <internal_build val="true" />
+    <link_file name="QD.coff" />
+    <primary_script_file name="QD.Cpu32Command" />
+    <source_file name="main.c" tool="GNU_CC_CPU32" search_path0="etpu\_etpu_set\cpu" search_path1="etpu\_etpu_set" search_path2="etpu\_utils" search_path3="etpu\eqd" search_path4="include" />
+    <source_file name="etpu_gct.c" tool="GNU_CC_CPU32" search_path0="etpu\_etpu_set\cpu" search_path1="etpu\_etpu_set" search_path2="etpu\_utils" search_path3="etpu\eqd" search_path4="include" />
+    <source_file name="etpu\_utils\etpu_util_ext.c" tool="GNU_CC_CPU32" search_path0="etpu\_etpu_set\cpu" search_path1="etpu\_etpu_set" search_path2="etpu\_utils" search_path3="etpu\eqd" search_path4="include" />
+    <source_file name="etpu\eqd\etpu_eqd.c" tool="GNU_CC_CPU32" search_path0="etpu\_etpu_set\cpu" search_path1="etpu\_etpu_set" search_path2="etpu\_utils" search_path3="etpu\eqd" search_path4="include" />
+  </target>
+  <!--======    END TARGET-SPECIFIC SETTINGS          =======-->
+  <!--=======================================================-->
+  <!--=======================================================-->
+  <!--======    START TARGET-SPECIFIC SETTINGS        =======-->
+  <target name="eTPU_A">
+    <internal_build val="true" />
+    <link_file name="etpu\_etpu_set\etpu_set.elf" />
+    <source_file name="etpu\_etpu_set\ETEC_fs_func_set.c" tool="ETEC_CC" />
+    <source_file name="etpu\_etpu_set\etec_eqd.c" tool="ETEC_CC" />
+  </target>
+  <!--======    END TARGET-SPECIFIC SETTINGS          =======-->
+  <!--=======================================================-->
+</user>
