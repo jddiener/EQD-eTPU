@@ -42,10 +42,10 @@ uint32_t *fs_etpu_free_param;
 uint32_t *fs_etpu_c_free_param;
 
 /* counter frequencies */
-uint32_t etpu_a_tcr1_freq = 132000000/2;
-uint32_t etpu_a_tcr2_freq = 132000000/8;
-uint32_t etpu_b_tcr1_freq = 132000000/2;
-uint32_t etpu_b_tcr2_freq = 132000000/8;
+uint32_t etpu_a_tcr1_freq = 100000000/2;
+uint32_t etpu_a_tcr2_freq = 100000000/8;
+uint32_t etpu_b_tcr1_freq = 100000000/2;
+uint32_t etpu_b_tcr2_freq = 100000000/8;
 uint32_t etpu_c_tcr1_freq = 0;
 uint32_t etpu_c_tcr2_freq = 0;
 

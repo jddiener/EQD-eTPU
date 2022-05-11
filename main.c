@@ -63,7 +63,7 @@ int user_main()
         FS_ETPU_TCR1, 0, 21000, 19000, 29000, 28000, 
         0x500000, 0xB00000, 
         FS_ETPU_QD_HOME_TRANS_ANY, FS_ETPU_QD_INDEX_PULSE_POSITIVE, FS_ETPU_QD_INDEX_PC_NO_RESET,
-        50000000, 60) != 0)
+        FS_ETPU_QD_ETPU_A_TCR1_FREQ, 60) != 0)
         fail_loop();
 
     // ********************************************

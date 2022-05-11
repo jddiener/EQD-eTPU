@@ -6,6 +6,7 @@ This enhanced Quadrature Decoder eTPU driver is based upon the original NXP soft
 - allow input channels to be any 2 channels on an eTPU engine
 - fix a potential startup issue with windowing enabled
 - provide windowing error status
+- fix a bug in threshold initialization at high TCRx frequencies
 
 This software is built and simulated/tested by the following tools:
 

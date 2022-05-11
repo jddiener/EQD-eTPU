@@ -242,18 +242,37 @@ int32_t fs_etpu_eqd_init(ETPU_MODULE etpu_module,
 
    if (pc_per_rev > 0)
    {
-       if (slow_normal_threshold > 0)
-           slow_normal_threshold = (uint24_t)(((60*etpu_tcr_freq)/
-                                        (pc_per_rev*slow_normal_threshold))<<2);
-       if (normal_slow_threshold > 0)
-           normal_slow_threshold = (uint24_t)(((60*etpu_tcr_freq)/
-                                        (pc_per_rev*normal_slow_threshold))<<2);
-       if (normal_fast_threshold > 0)
-           normal_fast_threshold = (uint24_t)(((60*etpu_tcr_freq)/
-                                        (pc_per_rev*normal_fast_threshold))<<2);
-       if (fast_normal_threshold > 0)
-           fast_normal_threshold = (uint24_t)(((60*etpu_tcr_freq)/
-                                        (pc_per_rev*fast_normal_threshold))<<2);
+       /* prevent arithmetic overflow when high TCR frequencies are in use */
+       if (etpu_tcr_freq > 0xfffffffU / 60)
+       {
+           if (slow_normal_threshold > 0)
+               slow_normal_threshold = (uint24_t)(((etpu_tcr_freq/
+                                            (pc_per_rev*slow_normal_threshold))*60)<<2);
+           if (normal_slow_threshold > 0)
+               normal_slow_threshold = (uint24_t)(((etpu_tcr_freq/
+                                            (pc_per_rev*normal_slow_threshold))*60)<<2);
+           if (normal_fast_threshold > 0)
+               normal_fast_threshold = (uint24_t)(((etpu_tcr_freq/
+                                            (pc_per_rev*normal_fast_threshold))*60)<<2);
+           if (fast_normal_threshold > 0)
+               fast_normal_threshold = (uint24_t)(((etpu_tcr_freq/
+                                            (pc_per_rev*fast_normal_threshold))*60)<<2);
+       }
+       else
+       {
+           if (slow_normal_threshold > 0)
+               slow_normal_threshold = (uint24_t)(((60*etpu_tcr_freq)/
+                                            (pc_per_rev*slow_normal_threshold))<<2);
+           if (normal_slow_threshold > 0)
+               normal_slow_threshold = (uint24_t)(((60*etpu_tcr_freq)/
+                                            (pc_per_rev*normal_slow_threshold))<<2);
+           if (normal_fast_threshold > 0)
+               normal_fast_threshold = (uint24_t)(((60*etpu_tcr_freq)/
+                                            (pc_per_rev*normal_fast_threshold))<<2);
+           if (fast_normal_threshold > 0)
+               fast_normal_threshold = (uint24_t)(((60*etpu_tcr_freq)/
+                                            (pc_per_rev*fast_normal_threshold))<<2);
+       }
    }
 
    *(pba + (FS_ETPU_QD_PERIOD_OFFSET>>2)) = 0;
