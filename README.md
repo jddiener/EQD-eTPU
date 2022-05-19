@@ -7,6 +7,8 @@ This enhanced Quadrature Decoder eTPU driver is based upon the original NXP soft
 - fix a potential startup issue with windowing enabled
 - provide windowing error status
 - fix a bug in threshold initialization at high TCRx frequencies
+- fix a bug in the windowing calculation that can result in mistaken 
+  windowing error detection and incorrect period calculations
 
 This software is built and simulated/tested by the following tools:
 
