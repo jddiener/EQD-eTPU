@@ -39,6 +39,7 @@
 *                                       collection, provide consistent period value,
 *                                       flexible phase input channels, output 
 *                                       windowing error info.
+*  2.1         J. Diener    19/May/22   Fix a bug in the windowing calculation.
 *              
 *******************************************************************************/
 
@@ -710,6 +711,9 @@ _eTPU_fragment QD::Common()
    {
       /* Clear leading edge indication bit and Fast to Normal Switch indication bit */
       mode_current &= (~(QD_LEADING_EDGE_INDICATION | QD_FAST_TO_NORMAL_SWITCH));
+      tmp_period = period._data_8_24._data_24_lsb;
+      if (mode_current & QD_MODE_NORMAL)
+          tmp_period >>= 1; // windowing based upon half period when in NORMAL mode
    }
 
    erta = last_edge;  // just in case erta is incorrect after channel changes etc.
